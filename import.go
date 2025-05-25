@@ -1,0 +1,18 @@
+package basics
+
+import (
+	"fmt"
+	"net/http"
+)
+
+func basics() {
+	fmt.Println("Hello, Go Standard Library!")
+	resp, err := http.Get("https://jsonplaceholder.typicode.com/posts/1")
+	if err != nil {
+		fmt.Println("Error ", err)
+		return
+	}
+	defer resp.Body.Close()
+	fmt.Println("http response status: ", resp.Status)
+
+}
