@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	//variable declaration
+	var a, b int = 10, 3
+	var result int
+
+	result = a + b
+	fmt.Prntln("Addition:", result)
+
+	result = a - b
+	fmt.Prntln("Subtraction", result)
+
+	result = a * b
+	fmt.Println("Multiplication", result)
+
+}
